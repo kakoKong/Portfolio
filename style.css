@@ -6,7 +6,16 @@ body {
 }
 
 p{
-    font-size: 50px;
+    font-size: 2vh;
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 1vh;
+    }
+    p{
+        font-size: 1.5vh;
+    }
 }
 canvas {
     width: 100vw;
@@ -19,60 +28,134 @@ canvas {
   }
 
 h1{
-    font-size: 140px;
-    color: black;
+    font-size: 4vh;
+    color: rgb(41, 44, 46);
 }
 h2{
-    font-size: 80px;
+    font-size: 3vh;
     color:white;
 }
-#header h2{
-    
-    background: black;
+#header h2{  
+    background: rgb(66, 90, 104);
     padding: .3em 1em;
     text-transform: uppercase;
 }
 section{
     padding: 5em 15em;
     margin: 2em;
-    background-color: rgba(139, 139, 139, 0.5);
+    background-color: rgba(139, 139, 139, 0.8);
 }
 
 #header{
     text-align: center;
 }
 
+.skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills ul{
+    list-style: none;
+    font-size: 2vh;
+}
 .black{
     
     padding: auto;
     padding: 10px 80px;
 }
+
+#education{
+    height: 70%;
+    position: relative;
+}
 .school{
-    width: 40%;
+    width: 70%;
+    height: 35vh;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    top: 50%;
+    background-color: white;
+    padding: 5vh;
+    border-radius: 50px;
+    color: rgb(94, 94, 94);
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 200ms ease-in-out;
+    transition-delay: 200ms;
+}
+.active{
+    opacity: 1;
+    transition-delay: 0;
 }
 .school h2{
     text-decoration: solid;
     margin: 0;
     text-transform: uppercase;
-    
+    color: rgb(94, 94, 94);
+}
+.buttonWrap{
+    display: inline;
+}
+.carousel-button{
+    position: absolute;
+    /* margin: 0 1.5em; */
+    width: 270px;
+    height: 100px;
+    font-size: 80px;
+    cursor: pointer;
+    border-radius: 30px;
+    /* color: white; */
+    border: 0px solid rgb(66, 90, 104);
+    transition: 200ms;
+    z-index: 99;
+    top:50%;
+}
+
+.carousel-button:hover{
+    background-color: rgb(66, 90, 104);
+}
+
+.carousel-button.back{
+    left: 2vw;
+}
+
+.carousel-button.next{
+    right: 2vw;
 }
 .container{
     display: flex;
-    align-items: center;
+    /* top: 50%; */
+    position: relative;
+    /* align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+    background-color: white;
 }
 .year{
-    background-color: rgb(66, 66, 104);
+    background-color: rgb(66, 90, 104);
     color: white;
     text-align: center;
     padding: 12px 1em;
+    font-size: 3vh;
 }
 .year span{
-    text-align: left;
+    text-align: center;
     margin-right: 0;
     padding: 0 3em;
-    font-size: 30px;
+    font-size: 2vh;
+    display: block;
+}
+
+@media screen and (max-width: 800px){
+    .year{
+        font-size: 2vh;
+    }
+    .year span{
+        font-size: 1vh;
+    }
 }
 .avatar{
     width: 480px;
@@ -118,16 +201,3 @@ animation: caret 1s steps(1) infinite;
 }
 }
 
-.buttonWrap{
-    display: inline;
-}
-button{
-    margin: .5em 3em;
-    width: 400px;
-    height: 180px;
-    font-size: 80px;
-    cursor: pointer;
-    border-radius: 30px;
-    /* color: white; */
-    border: 10px solid rgb(66, 66, 104);
-}

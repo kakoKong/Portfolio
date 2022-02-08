@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='style.css'>
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <script src="script.js"></script>
-    <!-- <script type="module" charset="UTF-8" src="three.js"></script> -->
+    <script type="module" charset="UTF-8" src="three.js"></script>
     <title>KK's Portfolio</title>
 </head>
 <body>
-    <!-- <canvas id="gl-canvas"></canvas> -->
+    <canvas id="gl-canvas"></canvas>
     <section id="header">
         <h1>Who Am I</h1>
         <div class="avatar">
@@ -27,38 +28,63 @@
             in working on developer and data field for my career, however, I am not sure yet on which 
             path to choose. Therefore, I am trying to be professional on both path.
         </p>
+        <div class="skills">
+            <div class="coding">
+                <h2>Coding</h2>
+                <uL>
+                    <li>Python</li>
+                    <li>Javascript</li>
+                    <li>HTML/CSS</li>
+                    <li>React</li>
+                    <li>NodeJS</li>
+                    <li>Machine Learning</li>
+                    <li>SQL - PostgreSQL</li>
+                    <li>Java</li>
+                </uL>
+            </div>
+            <div class="soft">
+                <h2>Other Skills</h2>
+                <uL>
+                    <li>Figma</li>
+                    <li>Business Canvas</li>
+                    <li>Pitching</li>
+                    <li>Presentation Design</li>
+                </uL>
+            </div>
+            <div class="languaue">
+                <h2>Languages</h2>
+                <uL>
+                    <li>Thai (Native)</li>
+                    <li>English (Fluent)</li>
+                    <li>Japanese (Intermediate)</li>
+                    
+                </uL>
+            </div>
+        </div>
     </section>
     <section id="education">
         <h1>Education</h1>
-        <div class="container">
-            <div class="school">
-                <h2>International Community School</h2>
-                <p class="year">
-                    Middle School
-                    <span>
-                    2011-2015 
-                    </span>
-                </p>
-                <p>
-                    I went to middle school at Internation Community School of Bangkok
-                </p>
-            </div>
-            <div class="school">
+        <div class="container" card-container>
+            <div class="school active">
                 <h2>Meitoku Gijuku High School</h2>
+                
                 <p class="year">
-                    Math and Science
+                    High School
                     <span>
                     2015-2018 
                     </span>
                 </p>
                 <p>
-                    I went to middle school at Internation Community School of Bangkok
+                    <i>Kochi, Japan</i><br><br>
+                    <b>Course: Mathematics and Sciene</b> (In Japanese) <br>
+                    <b>Activities: </b> Hiking Club, Aikido Club <br>
+                    <b>Achievement: </b> Passed JLPT N2
                 </p>
             </div>
             <div class="school">
                 <h2>Warwick IFP</h2>
                 <p class="year">
-                    Science and Engineering
+                    Foundation Programme
                     <span>
                     2018-2019 
                     </span>
@@ -66,7 +92,16 @@
                     
                 </p>
                 <p>
-                    I went to middle school at Internation Community School of Bangkok
+                    <i>Coventry, United Kingdom</i><br><br>
+                    <b>Course: Sciene and Engineering</b><br>
+                    <b>Modules: </b> 
+                    Fundemental Programming, 
+                    Mathematics for Science, 
+                    Physics, 
+                    Inquiry and Research Skills for Science 
+                    <br>
+                    <b>Achievement: </b> Overall grade - Distinction (70%+), IELTS 7.0
+
                 </p>
             </div>
             <div class="school">
@@ -78,14 +113,21 @@
                     </span>
                 </p>
                 <p>
-                    I went to middle school at Internation Community School of Bangkok
+                    <i>Coventry, United Kingdom</i><br><br>
+                    <b>Relevant Modules: </b>
+                    Neural Computing, Machine Learning, Web Development,
+                    Advanced Database, Mobile Robotics, Operating System and Networks,
+                    Artificial Intelligence <br>
+                    <b>Activities: </b>
+                    Thai Society Executives - Head of Marketing, Samaggi Startup Competition, Samaggi Case Competition
+
                 </p>
             </div>
-            <div class="buttonWrap">
-                <button disabled>Back</button>
-                <button>Next</button>
-            </div>
             
+        </div>
+        <div class="buttonWrap" buttonWrap>
+            <button class="carousel-button back" data-carousel-button="back" onclick="plusSlides(-1)">&#8249;</button>
+            <button class="carousel-button next" data-carousel-button="next" onclick="plusSlides(1)">&#8250;</button>
         </div>
         
     </section>

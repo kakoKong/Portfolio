@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    educations = (document.getElementsByClassName('school'))
-    console.log(educations[0])
-
     
+  // var slides = document.getElementsByClassName("school");
+  var buttons = document.getElementsByClassName("carousel-button")
+  // if ()
+  buttons.item(0).disabled = true;
+
+
     // array with texts to type in typewriter
     var dataText = [ "Software Engineer.", 
     "Front-end Developer.", "Web Development.", "Data Scientist."];
@@ -50,3 +53,26 @@ document.addEventListener('DOMContentLoaded',function(event){
     // start the text animation
     StartTextAnimation(0);
   });
+
+    var slideIndex = 0;
+    // Next/previous controls
+    function plusSlides(n) {
+      var slides = document.getElementsByClassName("school");
+      slides[slideIndex + n].classList.add('active')
+      slides[slideIndex].classList.remove('active')
+      var buttons = document.getElementsByClassName("carousel-button")
+      console.log(slideIndex)
+      slideIndex = slideIndex + n;
+      if (slideIndex == 0){
+        buttons.item(0).disabled = true
+      }
+      else if (slideIndex == 2){
+        buttons.item(1).disabled = true
+      }
+      else{
+        buttons.item(0).disabled = false;
+        buttons.item(1).disabled = false;
+      }
+      
+    }
+
