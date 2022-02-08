@@ -19,13 +19,18 @@ canvas {
   }
 
 h1{
-    font-size: 120px;
+    font-size: 140px;
     color: black;
 }
-
 h2{
     font-size: 80px;
     color:white;
+}
+#header h2{
+    
+    background: black;
+    padding: .3em 1em;
+    text-transform: uppercase;
 }
 section{
     padding: 5em 15em;
@@ -37,18 +42,38 @@ section{
     text-align: center;
 }
 
-#header h2{
-    /* text-align: left; */
-    
-    /* margin-top: 30em; */
-    display: block;
-  }
 .black{
-    background: black;
+    
     padding: auto;
     padding: 10px 80px;
 }
-  
+.school{
+    width: 40%;
+}
+.school h2{
+    text-decoration: solid;
+    margin: 0;
+    text-transform: uppercase;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.year{
+    background-color: rgb(66, 66, 104);
+    color: white;
+    text-align: center;
+    padding: 12px 1em;
+}
+.year span{
+    text-align: left;
+    margin-right: 0;
+    padding: 0 3em;
+    font-size: 30px;
+}
 .avatar{
     width: 480px;
     position: relative;
@@ -81,21 +106,28 @@ section{
     opacity: 1;
     cursor: pointer;
 }
+ 
+h2 span {
+border-right: .05em solid;
+animation: caret 1s steps(1) infinite;
+}
 
-  
-  h1 {
-    font-size: 5em;
-    color: white;
-    text-transform: uppercase;
-  }
-  
-  span {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite;
-  }
-  
-  @keyframes caret {
-    50% {
-      border-color: transparent;
-    }
-  }
+@keyframes caret {
+50% {
+    border-color: transparent;
+}
+}
+
+.buttonWrap{
+    display: inline;
+}
+button{
+    margin: .5em 3em;
+    width: 400px;
+    height: 180px;
+    font-size: 80px;
+    cursor: pointer;
+    border-radius: 30px;
+    /* color: white; */
+    border: 10px solid rgb(66, 66, 104);
+}
