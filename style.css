@@ -46,7 +46,7 @@ h2{
 }
 section{
     padding: 5em 15em;
-    margin: 4em;
+    margin: 10vh 20vw;
     background-color: rgba(139, 139, 139, 0.4);
 }
 
@@ -209,23 +209,48 @@ animation: caret 1s steps(1) infinite;
 
 /* Project */
 #proj-container{
-    display: grid;
+    /* display: grid; */
     /* grid-column-gap: 50px; */
-    grid-template-areas:
+    /* grid-template-areas:
     'item1 item1 item2 item2 item2 item3'
     'item1 item1 item2 item2 item2 item3'
-    'item1 item1 item4 item4 item5 item5';
-    grid-gap: 30px;
-    /* background-color: #2196F3; */
+    'item1 item1 item4 item4 item5 item5'; */
+    /* grid-gap: 30px;
     padding: 10px;
+    grid-template-columns: repeat(5, 1fr); */
+    /* grid-auto-rows: minmax(1000px, auto); */
+    display: flex;
+    flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 600px){
+    #proj-container{
+        display: flex;
+        /* grid-column-gap: 50px; */
+        flex-wrap: wrap;
+        /* grid-auto-rows: minmax(1000px, auto); */
+    }
+    .proj{
+        /* width: 50%; */
+        
+        height: auto;
+        /* border: 1em solid black; */
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        
+        cursor: pointer;
+        position: relative;
+        
+    }
+}
+
 .proj{
     /* width: 50%; */
     height: auto;
     /* border: 1em solid black; */
-    grid-column-start: 1;
-    grid-column-end: 3;
-    
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    margin: 5em;
     cursor: pointer;
     position: relative;
     
@@ -241,7 +266,8 @@ animation: caret 1s steps(1) infinite;
     bottom: 0;
     text-align: center;
     background-color: rgba(65, 150, 165, 0.384);
-    transition: 300ms ease-in;
+    transition: all .75s ease;
+    width: 1px;
     opacity: 0;
 }
 .proj img{
@@ -253,6 +279,7 @@ animation: caret 1s steps(1) infinite;
 }
 .proj:hover > h2{
     opacity: 1;
+    width: 50%;
 }
 .proj:hover > img{
     opacity: 0.8;
@@ -289,7 +316,7 @@ animation: caret 1s steps(1) infinite;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 200px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
 }
 
 .pop h2{
@@ -302,5 +329,5 @@ animation: caret 1s steps(1) infinite;
 .pop img{
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
 }
