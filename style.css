@@ -112,7 +112,7 @@ section{
     display: inline;
 }
 .carousel-button{
-    background-color: rgb(209, 209, 209, 0.5);
+    background-color: rgb(209, 209, 209, 0.0);
     position: absolute;
     /* margin: 0 1.5em; */
     width: 0.5em;
@@ -129,7 +129,7 @@ section{
 }
 
 .carousel-button:hover:enabled{
-    background-color: rgb(66, 90, 104);
+    background-color: rgb(66, 90, 104, 0.01);
     cursor: pointer;
 }
 
@@ -347,7 +347,7 @@ address{
     text-align: right;
 }
 #download{
-    font-size: 1em;
+    font-size: .8em;
     background-color: cadetblue;
     padding: 0.3em 1em;
 }

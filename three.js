@@ -45,7 +45,7 @@ plane.position.y = -5;
 const edu = addReg('assets/ferret.png');
 const ex = addReg('assets/threejs.png');
 const proj =  addReg('assets/thaiso.png');
-const skill = addReg('assets/MLL.JPG');
+const skill = addReg('assets/UniRev.JPG');
 
 proj.position.z = -40;
 proj.rotation.x = 0;
