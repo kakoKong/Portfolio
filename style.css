@@ -42,7 +42,7 @@ h2{
     text-transform: uppercase;
 }
 section{
-    padding: 2em 5%;
+    padding: 2em 2em;
     padding-bottom: 4em;
     margin: 5vw 10%;
     background-color: rgba(255, 255, 255, 0.96);
@@ -110,10 +110,10 @@ section{
     display: inline;
 }
 .carousel-button{
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(209, 209, 209, 0.5);
     position: absolute;
     /* margin: 0 1.5em; */
-    width: 5%;
+    width: 0.5em;
     /* height: 80%; */
     font-size: 5em;
     /* padding-bottom: 1%; */
