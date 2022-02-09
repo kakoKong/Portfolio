@@ -8,11 +8,11 @@ body {
 
 
 p{
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 h5{
-    font-size: 6vh;
+    font-size: 3vh;
     margin: 0;
     margin-top: 20px;
 }
@@ -322,7 +322,7 @@ animation: caret 1s steps(1) infinite;
     text-align: center;
     color: #888;
     margin: 2% auto; 
-    padding: 20px 200px;
+    padding: 1% 5%;
     padding-bottom: 50px;
     border: 1px solid #888;
     width: 40%; /* Could be more or less, depending on screen size */
