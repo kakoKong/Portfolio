@@ -3,18 +3,33 @@ body {
     margin: 0px;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(59, 59, 59);
 }
+
 
 p{
-    font-size: 2vh;
+    font-size: 3vh;
 }
 
-@media screen and (max-width: 800px){
+h5{
+    font-size: 6vh;
+    margin: 0;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+@media screen and (max-width: 600px){
     h1{
         font-size: 1vh;
     }
     p{
         font-size: 1.5vh;
+    }
+    #gl-canvas{
+        display: none;
     }
 }
 canvas {
@@ -28,11 +43,12 @@ canvas {
   }
 
 h1{
-    font-size: 4vh;
-    color: rgb(41, 44, 46);
+    font-size: 8vh;
+    color: rgb(66, 90, 104);
+    text-transform: uppercase;
 }
 h2{
-    font-size: 3vh;
+    font-size: 4vh;
     color:white;
 }
 #header h2{  
@@ -41,9 +57,10 @@ h2{
     text-transform: uppercase;
 }
 section{
-    padding: 5em 15em;
-    margin: 2em;
-    background-color: rgba(139, 139, 139, 0.8);
+    padding: 2em 5%;
+    padding-bottom: 4em;
+    margin: 5vh 10%;
+    background-color: rgba(255, 255, 255, 0.96);
 }
 
 #header{
@@ -58,7 +75,7 @@ section{
 
 .skills ul{
     list-style: none;
-    font-size: 2vh;
+    font-size: 4vh;
 }
 .black{
     
@@ -67,12 +84,13 @@ section{
 }
 
 #education{
-    height: 70%;
+    height: 60%;
     position: relative;
+    /* text-align: center; */
 }
 .school{
     width: 70%;
-    height: 35vh;
+    /* height: 100%; */
     position: absolute;
     inset: 0;
     opacity: 0;
@@ -102,36 +120,40 @@ section{
 .carousel-button{
     position: absolute;
     /* margin: 0 1.5em; */
-    width: 270px;
-    height: 100px;
-    font-size: 80px;
-    cursor: pointer;
-    border-radius: 30px;
+    width: 10%;
+    height: 10%;
+    font-size: 5rem;
+    padding-bottom: 1%;
+    /* border-radius: 30px; */
     /* color: white; */
     border: 0px solid rgb(66, 90, 104);
     transition: 200ms;
-    z-index: 99;
+    z-index: 2;
     top:50%;
 }
 
-.carousel-button:hover{
+.carousel-button:hover:enabled{
     background-color: rgb(66, 90, 104);
+    cursor: pointer;
 }
 
 .carousel-button.back{
-    left: 2vw;
+    left: 2%;
 }
 
 .carousel-button.next{
-    right: 2vw;
+    right: 2%;
 }
 .container{
     display: flex;
     /* top: 50%; */
     position: relative;
-    /* align-items: center;
+    align-items: center;
+    /* height: 20vh; */
+    /* top: 50%; */
+    /* border: 1px solid black; */
     flex-wrap: wrap;
-    justify-content: space-evenly; */
+    justify-content: space-evenly; 
     background-color: white;
 }
 .year{
@@ -139,17 +161,17 @@ section{
     color: white;
     text-align: center;
     padding: 12px 1em;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 .year span{
     text-align: center;
     margin-right: 0;
     padding: 0 3em;
-    font-size: 2vh;
+    font-size: 3vh;
     display: block;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
     .year{
         font-size: 2vh;
     }
@@ -158,7 +180,7 @@ section{
     }
 }
 .avatar{
-    width: 480px;
+    width: 250px;
     position: relative;
     display: inline-block;
     border-radius: 10p;
@@ -169,12 +191,12 @@ section{
     /* display: block; */
 }
 .avatar img{
-    width: 480px;
+    width: 250px;
     /* position: absolute; */
     
     border-radius: 100px;
     /* left: 0; */
-    transition: opacity 1s ease-in-out;
+    transition: opacity 500ms ease-in-out;
 
 }
 
@@ -201,3 +223,146 @@ animation: caret 1s steps(1) infinite;
 }
 }
 
+
+/* Project */
+#proj-container{
+    /* display: grid;
+    grid-column-gap: 50px;
+    grid-template-areas:
+    'item1 item1 item2 item2 item2 item3'
+    'item1 item1 item2 item2 item2 item3'
+    'item1 item1 item4 item4 item5 item5';
+    grid-gap: 30px;
+    padding: 10px; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-auto-rows: minmax(1000px, auto); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proj{
+    width: 580px;
+    /* height: auto; */
+    /* border: 1em solid black; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    margin: 2em 1em;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.proj h2{
+    position: absolute;
+    padding: 2% 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(46, 81, 87, 0.808);
+    transition: all .75s ease;
+    width: 1px;
+    opacity: 0;
+}
+.proj img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms ease-in-out;
+    z-index: -99;
+}
+.proj:hover > h2{
+    opacity: 1;
+    width: 50%;
+}
+.proj:hover > img{
+    opacity: 0.8;
+}
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
+.item5 { grid-area: item5; }
+
+.popup-container{
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-container.active{
+    display: block;
+}
+
+.pop{
+    display: none;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    color: #888;
+    margin: 2% auto; 
+    padding: 20px 200px;
+    padding-bottom: 50px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.pop h1{
+    text-transform: uppercase;
+    color: rgb(94, 129, 129);
+}
+.pop h2{
+    color: black;
+}
+.pop.active{
+    display: block
+}
+
+.pop img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#footer{
+    margin: 0;
+    background-color: rgb(98, 98, 98);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+address{
+    font-size: 2rem;
+    
+}
+
+.social{
+    text-align: right;
+}
+#download{
+    font-size: 4vh;
+    background-color: cadetblue;
+    padding: 0.3em 1em;
+}
+
+#download:hover{
+    color: cadetblue;
+    background-color: white;
+}

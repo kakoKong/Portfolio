@@ -13,7 +13,7 @@
 <body>
     <canvas id="gl-canvas"></canvas>
     <section id="header">
-        <h1>Who Am I</h1>
+        <h1>Hi There! It's Me</h1>
         <div class="avatar">
             <img src="assets/8Bit.png" alt="">
             <img src="assets/IMG-0566.jpg" alt="">
@@ -24,9 +24,9 @@
         </h2>
         <p>
             My name is Pattarathon Nopwattanapong, people called me KK or Kaokong.
-            I am final year Computer Science Student at University of Warwick, UK. I am interested
-            in working on developer and data field for my career, however, I am not sure yet on which 
-            path to choose. Therefore, I am trying to be professional on both path.
+            I am final year Computer Science Student at University of Warwick, UK.
+            I am looking for an entry-level job in Computer Science field 
+            including: Software Engineer, Front-end Development, and Data Science. 
         </p>
         <div class="skills">
             <div class="coding">
@@ -64,6 +64,7 @@
     </section>
     <section id="education">
         <h1>Education</h1>
+        <p>This Section shows the past educations I attended</p>
         <div class="container" card-container>
             <div class="school active">
                 <h2>Meitoku Gijuku High School</h2>
@@ -131,7 +132,94 @@
         </div>
         
     </section>
-    <section id="experience">
+    <section id="Project">
+        <h1>My Projects</h1>
+        <p>These are my previous projects I built either by myself or with team. Some of them have been deployed, and some are not
+            . This section is to let you get the overview on what I am capable of doing.
+        </p>
+        <div id="proj-container">
+            <div class="proj item1" onclick="clickModal(1)">
+                <img src="assets/thaiso.png" alt="">
+                <h2>ThaiSociety</h2>
+            </div>
+            <div class="proj item2" onclick="clickModal(2)">
+                <img src="assets/threejs.png" alt="">
+                <h2>ThreeJS-Game</h2>
+            </div>
+            <div class="proj item3" onclick="clickModal(3)">
+                <img src="assets/UniRev.JPG" alt="">\
+                <h2>RevEd</h2>
+            </div>
+            <div class="proj item4" onclick="clickModal(4)">
+                <img src="assets/ferret.png" alt="">
+                <h2>Ferret</h2>
+            </div>
+            <div class="proj item5" onclick="clickModal(5)">
+                <img src="assets/ML.jpg" alt="">
+                <h2>ML</h2>
+            </div>
+        </div>
+        <div class="popup-container">
+            <div class="pop pop1">
+                <h1>Warwick Thai Soc</h1>
+                <img src="assets/thaiso.png" alt="">
+                <h5>Warwick Thai Society Official Website - 2021</h5>
+                <p>Status: <b>Deployed</b></p>
+                <p><b>Tools: </b>HTML, CSS, Javascript - ReactJS - Material UI</p>
+                <p>My goal is to create a website that allows up-coming Thai student to 
+                    see how the life at warwick is and support them on their arrival
+                </p>
+                
+            </div>
+            <div class="pop pop2">
+                <h1>Three JS Game</h1>
+                <img src="assets/threejs.png" alt="">
+                <h5>Three JS Avoid the Car game</h5>
+                <p>Status: <b>Deployed</b></p>
+                <p><b>Tools: </b>Javascript - ThreeJS</p>
+                <p>
+                    Create a simple game on browser by ThreeJS. Where player is able to move left-right to avoid collision with the car.
+                    The car is an imported blender model.
+                </p>
+                
+            </div>
+            
+            <div class="pop pop3">
+                <h1>RevEd</h1>
+                <img src="assets/UniRev.JPG" alt="">
+                <h5>University's Course and Modules Review Website</h5>
+                <p>Status: <b>Un-Deployed</b></p>
+                <p>
+                    Create a CRUD website allowing students to come and review their course/modules. Goal is to allows student to be able
+                    to know what to expect from the modules they choose so they won't need to waste their time on something they are not
+                    interested.
+                </p>
+                <p><b>Tools: </b>Javascript - ReactJS NodeJS, MongoDB, HTML/CSS</p>
+            </div>
+            <div class="pop pop4">
+                <h1>Ferret</h1>
+                <img src="assets/ferret.png" alt="">
+                <h5>Live Event Sentimental Feedback</h5>
+                <p>Status: <b>Deployed</b></p>
+                <p>My goal is to create a website that allows up-coming Thai student to 
+                    see how the life at warwick is and support them on their arrival
+                </p>
+                <p><b>Tools: </b>Javascript - ReactJS, GraphQL</p>
+            </div>
+            <div class="pop pop5">
+                <h1>Machine Learning Project</h1>
+                <img src="assets/ML.jpg" alt="">
+                <h5>Restaurant Recommender System Web-App</h5>
+                <p>Status: <b>In-Progress</b></p>
+                <p>
+                    A web-application with machine learning model for recommending restaurants in London. Using the 
+                    content-based filtering methods, the model will return top 10 restaurants that would fit the user's preference.
+                </p>
+                <p><b>Tools: </b>Python - Pandas, Scikit-Learn, Flask, Javascript - ReactJS, HTML/CSS</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="experience">
         <h1>Past Expereinces</h1>
         <div class="ex">
             <h2>TDRI</h2>
@@ -142,17 +230,22 @@
         <div class="ex">
             <h2>Cloudero</h2>
         </div>
-    </section>
-    <section id="Project">
-        <h1>My Projects</h1>
-        <div class="proj">
-            <h2>TDRI</h2>
+    </section> -->
+    
+    <section id="footer">
+        <div class="contract">
+            <address>
+                <a href="mailto:khaokong@gmail.com">khaokong@gmail.com</a><br> 
+                UK: +44 77 06659392<br>
+                TH: +66 98 563 5451<br>
+                <a href="https://www.linkedin.com/in/pattarathon-kaokong-nopwattanapong-09b52219b/"><b>LinkedIn</b></a><br>
+                <a href="https://github.com/kakoKong"><b>GitHub</b></a>
+            </address>
+
         </div>
-        <div class="proj">
-            <h2>Samaggi</h2>
-        </div>
-        <div class="proj">
-            <h2>Cloudero</h2>
+        <div class="social">
+            <p>To Learn more about me</p>
+            <a id="download" href="assets/KKCV2022.pdf" download="Pattarathon CV">Download My <b>CV/Resume</b></a>
         </div>
     </section>
 </body>
