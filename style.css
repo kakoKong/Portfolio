@@ -3,10 +3,12 @@ body {
     margin: 0px;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(59, 59, 59);
 }
 
+
 p{
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 h5{
@@ -14,13 +16,20 @@ h5{
     margin: 0;
     margin-top: 20px;
 }
-
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
 @media screen and (max-width: 600px){
     h1{
         font-size: 1vh;
     }
     p{
         font-size: 1.5vh;
+    }
+    #gl-canvas{
+        display: none;
     }
 }
 canvas {
@@ -35,7 +44,7 @@ canvas {
 
 h1{
     font-size: 8vh;
-    color: rgb(255, 255, 255);
+    color: rgb(66, 90, 104);
     text-transform: uppercase;
 }
 h2{
@@ -48,10 +57,10 @@ h2{
     text-transform: uppercase;
 }
 section{
-    padding: 2em 15em;
+    padding: 2em 5%;
     padding-bottom: 4em;
-    margin: 5vh 20vw;
-    background-color: rgba(140, 140, 140, 0.9);
+    margin: 5vh 10%;
+    background-color: rgba(255, 255, 255, 0.96);
 }
 
 #header{
@@ -75,13 +84,13 @@ section{
 }
 
 #education{
-    height: 70%;
+    height: 60%;
     position: relative;
     /* text-align: center; */
 }
 .school{
     width: 70%;
-    height: 35vh;
+    /* height: 100%; */
     position: absolute;
     inset: 0;
     opacity: 0;
@@ -111,11 +120,11 @@ section{
 .carousel-button{
     position: absolute;
     /* margin: 0 1.5em; */
-    width: 4vw;
-    height: 8vh;
+    width: 10%;
+    height: 10%;
     font-size: 5rem;
-    
-    border-radius: 30px;
+    padding-bottom: 1%;
+    /* border-radius: 30px; */
     /* color: white; */
     border: 0px solid rgb(66, 90, 104);
     transition: 200ms;
@@ -129,17 +138,18 @@ section{
 }
 
 .carousel-button.back{
-    left: 2vw;
+    left: 2%;
 }
 
 .carousel-button.next{
-    right: 2vw;
+    right: 2%;
 }
 .container{
     display: flex;
-    /* top: 10%; */
+    /* top: 50%; */
     position: relative;
     align-items: center;
+    /* height: 20vh; */
     /* top: 50%; */
     /* border: 1px solid black; */
     flex-wrap: wrap;
@@ -170,7 +180,7 @@ section{
     }
 }
 .avatar{
-    width: 10vw;
+    width: 250px;
     position: relative;
     display: inline-block;
     border-radius: 10p;
@@ -181,7 +191,7 @@ section{
     /* display: block; */
 }
 .avatar img{
-    width: 10vw;
+    width: 250px;
     /* position: absolute; */
     
     border-radius: 100px;
@@ -216,48 +226,28 @@ animation: caret 1s steps(1) infinite;
 
 /* Project */
 #proj-container{
-    display: grid;
+    /* display: grid;
     grid-column-gap: 50px;
     grid-template-areas:
     'item1 item1 item2 item2 item2 item3'
     'item1 item1 item2 item2 item2 item3'
     'item1 item1 item4 item4 item5 item5';
     grid-gap: 30px;
-    padding: 10px;
+    padding: 10px; */
     /* grid-template-columns: repeat(5, 1fr); */
     /* grid-auto-rows: minmax(1000px, auto); */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-}
-
-@media only screen and (max-width: 600px){
-    #proj-container{
-        display: flex;
-        /* grid-column-gap: 50px; */
-        flex-wrap: wrap;
-        /* grid-auto-rows: minmax(1000px, auto); */
-    }
-    .proj{
-        /* width: 50%; */
-        
-        height: auto;
-        /* border: 1em solid black; */
-        /* grid-column-start: 1;
-        grid-column-end: 3; */
-        
-        cursor: pointer;
-        position: relative;
-        
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .proj{
-    /* width: 50%; */
-    height: auto;
+    width: 580px;
+    /* height: auto; */
     /* border: 1em solid black; */
-    grid-column-start: 1;
-    grid-column-end: 3;
-    /* margin: 5em; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    margin: 2em 1em;
     cursor: pointer;
     position: relative;
     
@@ -265,14 +255,14 @@ animation: caret 1s steps(1) infinite;
 
 .proj h2{
     position: absolute;
-    padding: 5% 20%;
+    padding: 2% 10%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     bottom: 0;
     text-align: center;
-    background-color: rgba(65, 150, 165, 0.384);
+    background-color: rgba(46, 81, 87, 0.808);
     transition: all .75s ease;
     width: 1px;
     opacity: 0;
