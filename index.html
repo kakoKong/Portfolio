@@ -65,6 +65,7 @@
     <section id="education">
         <h1>Education</h1>
         <p>This Section shows the past educations I attended</p>
+        <div class="wrapEdu">
         <div class="container" card-container>
             <div class="school active">
                 <h2>Meitoku Gijuku High School</h2>
@@ -130,7 +131,7 @@
             <button class="carousel-button back" data-carousel-button="back" onclick="plusSlides(-1)">&#8249;</button>
             <button class="carousel-button next" data-carousel-button="next" onclick="plusSlides(1)">&#8250;</button>
         </div>
-        
+    </div>
     </section>
     <section id="Project">
         <h1>My Projects</h1>
@@ -157,6 +158,10 @@
             <div class="proj item5" onclick="clickModal(5)">
                 <img src="assets/ML.jpg" alt="">
                 <h2>ML</h2>
+            </div>
+            <div class="proj item6" onclick="clickModal(6)">
+                <img src="assets/port.png" alt="">
+                <h2>Portfolio</h2>
             </div>
         </div>
         <div class="popup-container">
@@ -211,6 +216,17 @@
                 <img src="assets/ML.jpg" alt="">
                 <h5>Restaurant Recommender System Web-App</h5>
                 <p>Status: <b>In-Progress</b></p>
+                <p>
+                    A web-application with machine learning model for recommending restaurants in London. Using the 
+                    content-based filtering methods, the model will return top 10 restaurants that would fit the user's preference.
+                </p>
+                <p><b>Tools: </b>Python - Pandas, Scikit-Learn, Flask, Javascript - ReactJS, HTML/CSS</p>
+            </div>
+            <div class="pop pop6">
+                <h1>Portfolio</h1>
+                <img src="assets/Port.png" alt="">
+                <h5>My First Portfolio Website</h5>
+                <p>Status: <b>Deployed</b></p>
                 <p>
                     A web-application with machine learning model for recommending restaurants in London. Using the 
                     content-based filtering methods, the model will return top 10 restaurants that would fit the user's preference.
