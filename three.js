@@ -93,7 +93,7 @@ animate()
 function updateCamera(ev) {
     // let div1 = document.getElementById("div1");
     lookX = 10 - window.scrollY / 8.0;
-    lookZ = 10 - window.scrollY / 8;
+    // lookZ = 10 - window.scrollY / 8;
     console.log(window.scrollY)
     
     // camera.position.z = 10 - window.scrollY / 80.0;

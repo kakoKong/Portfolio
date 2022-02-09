@@ -54,25 +54,42 @@ document.addEventListener('DOMContentLoaded',function(event){
     StartTextAnimation(0);
   });
 
-    var slideIndex = 0;
-    // Next/previous controls
-    function plusSlides(n) {
-      var slides = document.getElementsByClassName("school");
-      slides[slideIndex + n].classList.add('active')
-      slides[slideIndex].classList.remove('active')
-      var buttons = document.getElementsByClassName("carousel-button")
-      console.log(slideIndex)
-      slideIndex = slideIndex + n;
-      if (slideIndex == 0){
-        buttons.item(0).disabled = true
-      }
-      else if (slideIndex == 2){
-        buttons.item(1).disabled = true
-      }
-      else{
-        buttons.item(0).disabled = false;
-        buttons.item(1).disabled = false;
-      }
-      
-    }
+var slideIndex = 0;
+// Next/previous controls
+function plusSlides(n) {
+  var slides = document.getElementsByClassName("school");
+  slides[slideIndex + n].classList.add('active')
+  slides[slideIndex].classList.remove('active')
+  var buttons = document.getElementsByClassName("carousel-button")
+  console.log(slideIndex)
+  slideIndex = slideIndex + n;
+  if (slideIndex == 0){
+    buttons.item(0).disabled = true
+  }
+  else if (slideIndex == 2){
+    buttons.item(1).disabled = true
+  }
+  else{
+    buttons.item(0).disabled = false;
+    buttons.item(1).disabled = false;
+  }
+  
+}
 
+var popContainer = document.getElementsByClassName("popup-container")
+var activeModal;
+function clickModal(item) {
+  console.log(popContainer)
+  popContainer[0].classList.add('active')
+  var projects = document.getElementsByClassName("pop")
+  projects[item - 1].classList.add('active')
+  activeModal = projects[item - 1]
+  console.log(projects[item - 1])
+}
+
+window.onclick = function(event) {
+  if (event.target == popContainer[0]) {
+    popContainer[0].classList.remove('active')
+    activeModal.classList.remove('active')
+  }
+}

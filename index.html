@@ -11,7 +11,7 @@
     <title>KK's Portfolio</title>
 </head>
 <body>
-    <canvas id="gl-canvas"></canvas>
+    <!-- <canvas id="gl-canvas"></canvas> -->
     <section id="header">
         <h1>Who Am I</h1>
         <div class="avatar">
@@ -145,15 +145,58 @@
     </section>
     <section id="Project">
         <h1>My Projects</h1>
-        <div class="proj">
-            <h2>TDRI</h2>
+        <div id="proj-container">
+            <div class="proj item1" onclick="clickModal(1)">
+                <img src="assets/test.jpg" alt="">
+                <h2>Warwick Thai Soc</h2>
+            </div>
+            <div class="proj item2" onclick="clickModal(2)">
+                <img src="assets/test.jpg" alt="">
+                <h2>Three JS Game</h2>
+            </div>
+            <div class="proj item3" onclick="clickModal(3)">
+                <img src="assets/test.jpg" alt="">\
+                <h2>RevEd</h2>
+            </div>
+            <div class="proj item4" onclick="clickModal(4)">
+                <img src="assets/test.jpg" alt="">
+                <h2>Ferret</h2>
+            </div>
+            <div class="proj item5" onclick="clickModal(5)">
+                <img src="assets/test.jpg" alt="">
+                <h2>ML</h2>
+            </div>
         </div>
-        <div class="proj">
-            <h2>Samaggi</h2>
+        <div class="popup-container">
+            <div class="pop pop1">
+                <h1>Warwick Thai Soc</h1>
+                <img src="assets/test.jpg" alt="">
+                <h5>Warwick Thai Society Official Website - 2021</h5>
+                <p>My goal is to create a website that allows up-coming Thai student to 
+                    see how the life at warwick is and support them on their arrival
+                </p>
+                <p><b>Tools: </b>HTML CSS Javascript ReactJS Material UI</p>
+            </div>
+            <div class="pop pop2">
+                <h2>Three JS Game</h2>
+                <img src="" alt="">
+            </div>
+            <div class="pop pop3">
+                <h2>Ferret</h2>
+                <img src="" alt="">
+            </div>
+            <div class="pop pop4">
+                <h2>RevEd</h2>
+                <img src="" alt="">
+            </div>
+            <div class="pop pop5">
+                <h2>RevEd</h2>
+                <img src="" alt="">
+            </div>
         </div>
-        <div class="proj">
-            <h2>Cloudero</h2>
-        </div>
+    </section>
+    <section id="footer">
+
     </section>
 </body>
 </html>
