@@ -61,7 +61,7 @@ function plusSlides(n) {
   slides[slideIndex + n].classList.add('active')
   slides[slideIndex].classList.remove('active')
   var buttons = document.getElementsByClassName("carousel-button")
-  console.log(slideIndex)
+  // console.log(slideIndex)
   slideIndex = slideIndex + n;
   if (slideIndex == 0){
     buttons.item(0).disabled = true
@@ -79,12 +79,12 @@ function plusSlides(n) {
 var popContainer = document.getElementsByClassName("popup-container")
 var activeModal;
 function clickModal(item) {
-  console.log(popContainer)
+  // console.log(popContainer)
   popContainer[0].classList.add('active')
   var projects = document.getElementsByClassName("pop")
   projects[item - 1].classList.add('active')
   activeModal = projects[item - 1]
-  console.log(projects[item - 1])
+  // console.log(projects[item - 1])
 }
 
 window.onclick = function(event) {

@@ -81,7 +81,6 @@ Array(200).fill().forEach(addStar)
 
 function addReg(tex){
     const loader = new THREE.TextureLoader();
-    console.log(loader)
     const geometry = new THREE.BoxGeometry(40, 25);
     const material = new THREE.MeshBasicMaterial( { map: loader.load(tex)} );
     const cube = new THREE.Mesh( geometry, material );
@@ -121,7 +120,6 @@ animate()
 var prev = 0
 function updateCamera(ev) {
     const t = document.body.getBoundingClientRect().top;
-    console.log(t)
     // camera.rotation.y += t * -0.0001
     // let div1 = document.getElementById("div1");
     if(scrollY > prev){
@@ -132,7 +130,6 @@ function updateCamera(ev) {
         camera.rotation.y += 0.03
         prev = scrollY
     }
-    console.log('scroll')
     // camera.position.z = 10 - window.scrollY / 80.0;
 }
 
