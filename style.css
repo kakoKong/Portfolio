@@ -61,6 +61,8 @@ section{
 .skills ul{
     list-style: none;
     font-size: 1em;
+    text-align: center;
+    padding-left: 0;
 }
 .black{
     
