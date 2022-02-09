@@ -8,30 +8,15 @@ body {
 
 
 p{
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 
 h5{
-    font-size: 3vh;
+    font-size: 1.5em;
     margin: 0;
     margin-top: 20px;
 }
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-@media screen and (max-width: 600px){
-    h1{
-        font-size: 1vh;
-    }
-    p{
-        font-size: 1.5vh;
-    }
-    #gl-canvas{
-        display: none;
-    }
-}
+
 canvas {
     width: 100vw;
     height: 100vh;
@@ -43,12 +28,12 @@ canvas {
   }
 
 h1{
-    font-size: 8vh;
+    font-size: 2em;
     color: rgb(66, 90, 104);
     text-transform: uppercase;
 }
 h2{
-    font-size: 4vh;
+    font-size: 1.5em;
     color:white;
 }
 #header h2{  
@@ -59,7 +44,7 @@ h2{
 section{
     padding: 2em 5%;
     padding-bottom: 4em;
-    margin: 5vh 10%;
+    margin: 5vw 10%;
     background-color: rgba(255, 255, 255, 0.96);
 }
 
@@ -75,7 +60,7 @@ section{
 
 .skills ul{
     list-style: none;
-    font-size: 4vh;
+    font-size: 1em;
 }
 .black{
     
@@ -88,7 +73,7 @@ section{
 
 .wrapEdu{
     position:relative;
-    height: 50rem;
+    height: 30em;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -96,7 +81,7 @@ section{
 .school{
     overflow: auto;
     width: 70%;
-    height: 40rem;
+    height: 25em;
     position: absolute;
     inset: 0;
     opacity: 0;
@@ -129,8 +114,8 @@ section{
     position: absolute;
     /* margin: 0 1.5em; */
     width: 5%;
-    height: 80%;
-    font-size: 5rem;
+    /* height: 80%; */
+    font-size: 5em;
     /* padding-bottom: 1%; */
     /* border-radius: 30px; */
     /* margin: 0 1rem; */
@@ -172,26 +157,18 @@ section{
     color: white;
     text-align: center;
     padding: 12px 1em;
-    font-size: 4vh;
+    font-size: 2vw;
 }
 .year span{
     text-align: center;
     margin-right: 0;
     padding: 0 3em;
-    font-size: 3vh;
+    font-size: 1vw;
     display: block;
 }
 
-@media screen and (max-width: 600px){
-    .year{
-        font-size: 2vh;
-    }
-    .year span{
-        font-size: 1vh;
-    }
-}
 .avatar{
-    width: 250px;
+    width: 10em;
     position: relative;
     display: inline-block;
     border-radius: 10p;
@@ -202,7 +179,7 @@ section{
     /* display: block; */
 }
 .avatar img{
-    width: 250px;
+    width: 10em;
     /* position: absolute; */
     
     border-radius: 100px;
@@ -253,7 +230,7 @@ animation: caret 1s steps(1) infinite;
 }
 
 .proj{
-    width: 580px;
+    width: 25em;
     /* height: auto; */
     /* border: 1em solid black; */
     /* grid-column-start: 1;
@@ -360,7 +337,7 @@ animation: caret 1s steps(1) infinite;
 }
 
 address{
-    font-size: 2rem;
+    font-size: 1em;
     
 }
 
@@ -368,7 +345,7 @@ address{
     text-align: right;
 }
 #download{
-    font-size: 4vh;
+    font-size: 1em;
     background-color: cadetblue;
     padding: 0.3em 1em;
 }
