@@ -6,14 +6,16 @@ body {
 }
 
 p{
-    font-size: 2vh;
+    font-size: 4vh;
 }
 
 h5{
-    font-size: 3rem
+    font-size: 6vh;
+    margin: 0;
+    margin-top: 20px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
     h1{
         font-size: 1vh;
     }
@@ -32,11 +34,12 @@ canvas {
   }
 
 h1{
-    font-size: 4vh;
-    color: rgb(41, 44, 46);
+    font-size: 8vh;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 h2{
-    font-size: 3vh;
+    font-size: 4vh;
     color:white;
 }
 #header h2{  
@@ -45,9 +48,10 @@ h2{
     text-transform: uppercase;
 }
 section{
-    padding: 5em 15em;
-    margin: 10vh 20vw;
-    background-color: rgba(139, 139, 139, 0.4);
+    padding: 2em 15em;
+    padding-bottom: 4em;
+    margin: 5vh 20vw;
+    background-color: rgba(139, 139, 139, 0.7);
 }
 
 #header{
@@ -62,7 +66,7 @@ section{
 
 .skills ul{
     list-style: none;
-    font-size: 2vh;
+    font-size: 4vh;
 }
 .black{
     
@@ -73,6 +77,7 @@ section{
 #education{
     height: 70%;
     position: relative;
+    /* text-align: center; */
 }
 .school{
     width: 70%;
@@ -106,9 +111,9 @@ section{
 .carousel-button{
     position: absolute;
     /* margin: 0 1.5em; */
-    width: 270px;
-    height: 100px;
-    font-size: 80px;
+    width: 4vw;
+    height: 8vh;
+    font-size: 5rem;
     
     border-radius: 30px;
     /* color: white; */
@@ -132,11 +137,13 @@ section{
 }
 .container{
     display: flex;
-    /* top: 50%; */
+    /* top: 10%; */
     position: relative;
-    /* align-items: center;
+    align-items: center;
+    /* top: 50%; */
+    /* border: 1px solid black; */
     flex-wrap: wrap;
-    justify-content: space-evenly; */
+    justify-content: space-evenly; 
     background-color: white;
 }
 .year{
@@ -144,17 +151,17 @@ section{
     color: white;
     text-align: center;
     padding: 12px 1em;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 .year span{
     text-align: center;
     margin-right: 0;
     padding: 0 3em;
-    font-size: 2vh;
+    font-size: 3vh;
     display: block;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
     .year{
         font-size: 2vh;
     }
@@ -163,7 +170,7 @@ section{
     }
 }
 .avatar{
-    width: 480px;
+    width: 10vw;
     position: relative;
     display: inline-block;
     border-radius: 10p;
@@ -174,7 +181,7 @@ section{
     /* display: block; */
 }
 .avatar img{
-    width: 480px;
+    width: 10vw;
     /* position: absolute; */
     
     border-radius: 100px;
@@ -209,18 +216,18 @@ animation: caret 1s steps(1) infinite;
 
 /* Project */
 #proj-container{
-    /* display: grid; */
-    /* grid-column-gap: 50px; */
-    /* grid-template-areas:
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-areas:
     'item1 item1 item2 item2 item2 item3'
     'item1 item1 item2 item2 item2 item3'
-    'item1 item1 item4 item4 item5 item5'; */
-    /* grid-gap: 30px;
+    'item1 item1 item4 item4 item5 item5';
+    grid-gap: 30px;
     padding: 10px;
-    grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-columns: repeat(5, 1fr); */
     /* grid-auto-rows: minmax(1000px, auto); */
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 @media only screen and (max-width: 600px){
@@ -248,9 +255,9 @@ animation: caret 1s steps(1) infinite;
     /* width: 50%; */
     height: auto;
     /* border: 1em solid black; */
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
-    margin: 5em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* margin: 5em; */
     cursor: pointer;
     position: relative;
     
@@ -313,12 +320,17 @@ animation: caret 1s steps(1) infinite;
     border-radius: 30px;
     text-align: center;
     color: #888;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 200px;
+    margin: 2% auto; 
+    padding: 20px 200px;
+    padding-bottom: 50px;
     border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
 }
 
+.pop h1{
+    text-transform: uppercase;
+    color: rgb(94, 129, 129);
+}
 .pop h2{
     color: black;
 }
@@ -329,5 +341,38 @@ animation: caret 1s steps(1) infinite;
 .pop img{
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
+}
+
+#footer{
+    margin: 0;
+    background-color: rgb(98, 98, 98);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+address{
+    font-size: 2rem;
+    
+}
+
+.social{
+    text-align: right;
+}
+#download{
+    font-size: 4vh;
+    background-color: cadetblue;
+    padding: 0.3em 1em;
+}
+
+#download:hover{
+    color: cadetblue;
+    background-color: white;
 }
