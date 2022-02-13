@@ -28,7 +28,7 @@ canvas {
   }
 
 h1{
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: rgb(66, 90, 104);
     text-transform: uppercase;
 }
@@ -42,7 +42,7 @@ h2{
     text-transform: uppercase;
 }
 section{
-    padding: 2em 2em;
+    padding: 2em 6em;
     padding-bottom: 4em;
     margin: 5vw 10%;
     background-color: rgba(255, 255, 255, 0.96);
@@ -159,13 +159,13 @@ section{
     color: white;
     text-align: center;
     padding: 12px 1em;
-    font-size: 2vw;
+    font-size: 1em;
 }
 .year span{
     text-align: center;
     margin-right: 0;
     padding: 0 3em;
-    font-size: 1vw;
+    font-size: .5em;
     display: block;
 }
 
@@ -331,6 +331,7 @@ animation: caret 1s steps(1) infinite;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap-reverse;
 }
 
 #footer a{
