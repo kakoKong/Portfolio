@@ -87,7 +87,7 @@ function clickModal(item) {
   // console.log(projects[item - 1])
 }
 
-window.onclick = function(event) {
+window.onmousedown = function(event) {
   if (event.target == popContainer[0]) {
     popContainer[0].classList.remove('active')
     activeModal.classList.remove('active')
